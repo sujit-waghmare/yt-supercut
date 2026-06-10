@@ -4,10 +4,8 @@
 
 **All-in-one YouTube toolkit for Obsidian**
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blue?style=flat-square)](https://github.com/sujit-waghmare/yt-supercut/releases)
-[![Obsidian](https://img.shields.io/badge/Obsidian-1.4.0+-purple?style=flat-square)](https://obsidian.md)
-[![Mobile](https://img.shields.io/badge/Mobile-Friendly-brightgreen?style=flat-square)](https://obsidian.md)
-[![License](https://img.shields.io/badge/License-All_Rights_Reserved-red?style=flat-square)](./LICENSE)
+<img src="https://img.shields.io/github/v/release/sujit-waghmare/yt-supercut?color=blue&style=flat-square" />  <img src="https://img.shields.io/badge/Obsidian-v0.15.0+-purple?style=flat-square" />  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" />  <img src="https://img.shields.io/github/release-date/sujit-waghmare/yt-supercut?style=flat-square" />  <img src="https://img.shields.io/badge/Mobile%20Friendly-Yes-brightgreen?style=flat-square" />
+
 
 [Features](#features) · [Installation](#installation) · [Usage](#usage) · [Settings](#settings) · [Commands](#commands) · [FAQ](#faq)
 
