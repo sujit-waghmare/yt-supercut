@@ -1,34 +1,27 @@
----
-Made by: Waghmare
-GitHub repo: yt-supercut
-cssclasses:
-  - r-G
----
+<div align="center">
+
 # YT Supercut — Complete 1:1 Tutorial
 
-> **GitHub:** [Waghmare](https://github.com/sujit-waghmare/)
-> **Version:** 1.0.0
-> **Visibility:** Private
-> <cite>Waghmare</cite>
 
----
 
-<img src="https://img.shields.io/github/v/release/sujit-waghmare/yt-supercut?color=blue&style=flat-square" /><br><img src="https://img.shields.io/badge/Obsidian-v1.4.0+-purple?style=flat-square" /><br><img src="https://img.shields.io/badge/License-All_Rights_Reserved-red?style=flat-square" /><br><img src="https://img.shields.io/github/release-date/sujit-waghmare/yt-supercut?style=flat-square" /><br><img src="https://img.shields.io/badge/Mobile%20Friendly-Yes-brightgreen?style=flat-square" />
+<img src="https://img.shields.io/github/v/release/sujit-waghmare/yt-supercut?color=blue&style=flat-square" /><img src="https://img.shields.io/badge/Obsidian-v1.4.0+-purple?style=flat-square" /><img src="https://img.shields.io/badge/License-All_Rights_Reserved-red?style=flat-square" /><img src="https://img.shields.io/github/release-date/sujit-waghmare/yt-supercut?style=flat-square" /><img src="https://img.shields.io/badge/Mobile%20Friendly-Yes-brightgreen?style=flat-square" />
+
+</div>
 
 ---
 
 ## Table of Contents
 
-- [[#STEP 1 Prerequisites|Prerequisites]]
-- [[#STEP 2 Manual Installation of the Plugin|Installation]]
-- [[#STEP 3 Plugin Settings|Settings]]
-- [[#STEP 4 Using the Plugin|Using the Plugin]]
-- [[#STEP 5 Testing It Works|Testing]]
-- [[#Troubleshooting|Troubleshooting]]
-- [[#Pro Tips|Pro Tips]]
-- [[#Quick Reference Card|Reference Card]]
-- [[#File Reference|File Reference]]
-- [[#FAQ|FAQ]]
+- Prerequisites
+- Installation
+- Settings
+- Using the Plugin
+- Testing
+- Troubleshooting
+- Pro Tips
+- Reference Card
+- File Reference
+- FAQ
 
 ---
 
@@ -50,16 +43,16 @@ To prepare for installation:
 Since this plugin is not on the community store yet, install it manually from [GitHub](https://github.com/sujit-waghmare) or copy the files from [[#File Reference]].
 *Make sure to name the files and folders **EXACTLY** as given below.*
 
-> [!L-folder] ### Folder structure you need:
-> ```
-> YourVault/
-> 	└── .obsidian/
-> 		└── plugins/
-> 			└── yt-supercut/
-> 				├── main.js
-> 				├── manifest.json
-> 				└── styles.css
-> ```
+### Folder structure you need:
+```
+YourVault/
+ 	└── .obsidian/
+ 		└── plugins/
+ 			└── yt-supercut/
+ 				├── main.js
+ 				├── manifest.json
+ 				└── styles.css
+```
 
 ### Steps:
 
@@ -67,16 +60,25 @@ Since this plugin is not on the community store yet, install it manually from [G
    - Windows: Right-click vault in Obsidian → "Open vault folder"
    - Mac/Linux: Same option in File menu.
    - Mobile: Navigate to your vault folder → `.obsidian`
-   - > [!warning] My vault does not have a `.obsidian` folder, what do I do?
+   
+   * My vault does not have a `.obsidian` folder, what do I do?
    > Go to your file manager settings and enable `Show hidden files`.
+   
 2. Navigate to `.obsidian/plugins/`.
    - If the `plugins/` folder doesn't exist, create it manually.
+    
 3. Create a new folder named exactly: `yt-supercut`
+  
 4. Paste `main.js`, `manifest.json`, and `styles.css` inside it.
+  
 5. Open Obsidian.
+   
 6. Go to **Settings → Community Plugins**.
+   
 7. Click the **Refresh** button (circular arrow icon).
+   
 8. Find **"YT Supercut"** in the list.
+   
 9. Toggle it **ON**.
 
 ✅ Now ready to be worked.
@@ -291,7 +293,7 @@ Requires `YouTube Url` in frontmatter (or a `[Watch video](url)` link in the bod
 
 **What it writes:**
 
-```markdown
+````markdown
 ---
 YouTube Url: https://youtu.be/dQw4w9WgXcQ
 Thumbnail Url: https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg
@@ -310,13 +312,13 @@ iframe: false
 > (fetched description here)
 > </details>
 
-\`\`\`ytaudio
+```ytaudio
 Title: Never Gonna Give You Up
 YouTube Url: https://youtu.be/dQw4w9WgXcQ
-\`\`\`
+```
 
 👤 [RickAstleyYT](https://youtube.com/@RickAstleyYT) 🔗 [Watch video](https://youtu.be/dQw4w9WgXcQ)
-```
+````
 
 | Element | Visual Result |
 |---|---|
@@ -431,38 +433,66 @@ Some note text with a timestamp: 1:23
 
 ## Troubleshooting
 
-> [!L-cog] Floating window doesn't appear
-> * Confirm you are in **Reading View** (not Live Preview or Source mode).
-> * Confirm `Float Window: true` is in frontmatter (case-sensitive).
-> * Confirm `YouTube Url` exists and is a valid YouTube link.
+<details>
+<summary>Floating window doesn't appear</summary>
 
-> [!L-cog] Floating window is not draggable
-> * Make sure you are dragging from the **top handle bar** (with the grip dots), not the video itself.
-> * The close button (✕) is on the handle bar — clicking it is not a drag.
-> * On mobile, drag is not supported (mouse-only).
+* Confirm you are in **Reading View** (not Live Preview or Source mode).
+* Confirm `Float Window: true` is in frontmatter (case-sensitive).
+* Confirm `YouTube Url` exists and is a valid YouTube link.
 
-> [!L-cog] Shorts play audio only in float window
-> * This was a known issue in earlier versions. Current version uses the standard `/embed/` path for all URLs — Shorts work correctly.
-> * If you still see audio-only, confirm your URL contains `/shorts/` so the portrait window size is applied.
+</details>
 
-> [!L-cog] iframe toggle didn't change the note body
-> * Confirm `YouTube Url` is in frontmatter before running the command.
-> * Confirm the URL is valid (no extra spaces, correct format).
-> * If no H1, thumbnail, or existing iframe div exists in the body, the command has nothing to anchor to — run `Fetch metadata` first to set up the note structure.
+<details>
+<summary>Floating window is not draggable</summary>
 
-> [!L-cog] Sonicfonia not playing
-> * Confirm `Sonicfonia: true` in frontmatter, or enable "Enable Sonicfonia by default" in settings.
-> * For playlists: confirm YouTube Data API key is entered. Without it, only single videos work.
-> * Check status bar — `⏳ Loading…` for more than 10s means the API key is invalid or quota exceeded.
+* Make sure you are dragging from the **top handle bar** (with the grip dots), not the video itself.
+* The close button (✕) is on the handle bar — clicking it is not a drag.
+* On mobile, drag is not supported (mouse-only).
 
-> [!L-cog] Timestamps not converting
-> * Confirm `Timestamp: true` in frontmatter.
-> * Confirm `YouTube Url` is present — timestamps need a base URL to link to.
-> * Try the manual command: `Convert (mm:ss)/(hh:mm:ss) to timestamp links`.
+</details>
 
-> [!L-cog] ytaudio block shows an error
-> * Confirm the URL is a valid YouTube video (not a playlist or channel URL).
-> * Confirm the block uses `YouTube Url:` (capital Y and U, space after colon).
+<details>
+<summary>Shorts play audio only in float window</summary>
+
+* This was a known issue in earlier versions. Current version uses the standard `/embed/` path for all URLs — Shorts work correctly.
+* If you still see audio-only, confirm your URL contains `/shorts/` so the portrait window size is applied.
+
+</details>
+
+<details>
+<summary>iframe toggle didn't change the note body</summary>
+
+* Confirm `YouTube Url` is in frontmatter before running the command.
+* Confirm the URL is valid (no extra spaces, correct format).
+* If no H1, thumbnail, or existing iframe div exists in the body, the command has nothing to anchor to — run `Fetch metadata` first to set up the note structure.
+
+</details>
+
+<details>
+<summary>Sonicfonia not playing</summary>
+
+* Confirm `Sonicfonia: true` in frontmatter, or enable "Enable Sonicfonia by default" in settings.
+* For playlists: confirm YouTube Data API key is entered. Without it, only single videos work.
+* Check status bar — `⏳ Loading…` for more than 10s means the API key is invalid or quota exceeded.
+
+</details>
+
+<details>
+<summary>Timestamps not converting</summary>
+
+* Confirm `Timestamp: true` in frontmatter.
+* Confirm `YouTube Url` is present — timestamps need a base URL to link to.
+* Try the manual command: `Convert (mm:ss)/(hh:mm:ss) to timestamp links`.
+
+</details>
+
+<details>
+<summary>ytaudio block shows an error</summary>
+
+* Confirm the URL is a valid YouTube video (not a playlist or channel URL).
+* Confirm the block uses `YouTube Url:` (capital Y and U, space after colon).
+
+</details>
 
 ---
 
@@ -550,34 +580,67 @@ Full source: github.com/sujit-waghmare/yt-supercut
 
 ## FAQ
 
-> [!multi-column|col2]
->
->> [!L-badge-question-mark] **Q: What does `iframe: true` in frontmatter actually do?**
->> *It reflects the current state of your note body — `true` means an embedded `<iframe>` div is present in the note; `false` means a static `![Thumbnail]()` image is there instead. The plugin updates this property when you run the toggle command. You can also toggle it manually; the next time you run the command it reads the body (not the property) to decide what to do.*
->
->> [!L-badge-question-mark] **Q: Do I need a YouTube API key?**
->> *Only for Sonicfonia playlist support. Single video playback, the float window, iframe toggle, metadata fetching, timestamp conversion, and the ytaudio block all work without any API key.*
->
->> [!L-badge-question-mark] **Q: Do Shorts work in the floating window?**
->> *Yes. Shorts URLs (`/shorts/ID`) are detected and displayed in a 9:16 portrait window (340px wide). Earlier versions had an audio-only issue; this is fixed — Shorts now embed correctly.*
->
->> [!L-badge-question-mark] **Q: The float window isn't moving when I drag it.**
->> *Drag from the top handle bar only — the area with the grip dots. Dragging the video area itself doesn't work. The iframe captures mouse events, so drag detection is on the handle only.*
->
->> [!L-badge-question-mark] **Q: My float window position resets after reloading Obsidian.**
->> *Position is saved to plugin `data.json` and restored within a session. It resets on full vault reload by design — this avoids the window being off-screen after a resolution change.*
->
->> [!L-badge-question-mark] **Q: Can I have Sonicfonia and the float window active at the same time?**
->> *Yes. They use separate iframes and don't conflict. Float window is visible; Sonicfonia is a 1×1px hidden iframe.*
->
->> [!L-badge-question-mark] **Q: How do I stop Sonicfonia? There's no stop command.**
->> *Use `Sonicfonia: Toggle play/stop` — it stops if playing, or starts if stopped. This replaces the old separate stop and play commands.*
->
->> [!L-badge-question-mark] **Q: The iframe toggle injected the player in the wrong place.**
->> *The setting "Embed position" (Below H1 / Above H1) controls where it injects when no thumbnail or iframe exists yet. If a `![Thumbnail]()` already exists, the command replaces it in-place regardless of setting.*
->
->> [!L-badge-question-mark] **Q: How do I use a playlist for Sonicfonia?**
->> *1) Get a YouTube Data API key (see Settings section for steps). 2) Enter the playlist URL `https://youtube.com/playlist?list=PLxxxxx` in the `YouTube Url` frontmatter of your note, or paste it in Settings → Primary link (fallback). 3) Make sure `Sonicfonia: true` is in frontmatter (or "Enable by default" is ON). The plugin fetches all track IDs via the API and queues them.*
->
->> [!L-badge-question-mark] **Q: What YouTube URL formats are supported?**
->> *All of them: `youtu.be/ID`, `youtube.com/watch?v=ID`, `youtube.com/shorts/ID`, `youtube.com/live/ID`, `youtube.com/embed/ID`, and bare 11-character video IDs.*
+<details>
+<summary>What does `iframe: true` in frontmatter actually do?</summary>
+
+It reflects the current state of your note body — `true` means an embedded `<iframe>` div is present in the note; `false` means a static `![Thumbnail]()` image is there instead. The plugin updates this property when you run the toggle command. You can also toggle it manually; the next time you run the command it reads the body (not the property) to decide what to do.
+
+</details>
+
+<details>
+<summary>Do I need a YouTube API key?</summary>
+
+Only for Sonicfonia playlist support. Single video playback, the float window, iframe toggle, metadata fetching, timestamp conversion, and the ytaudio block all work without any API key.
+
+</details>
+
+<details>
+<summary>Do Shorts work in the floating window?</summary>
+
+Yes. Shorts URLs (`/shorts/ID`) are detected and displayed in a 9:16 portrait window (340px wide). Earlier versions had an audio-only issue; this is fixed — Shorts now embed correctly.
+
+</details>
+
+<details>
+<summary>The float window isn't moving when I drag it.</summary>
+
+Drag from the top handle bar only — the area with the grip dots. Dragging the video area itself doesn't work. The iframe captures mouse events, so drag detection is on the handle only.
+
+</details>
+
+<details>
+<summary>Can I have Sonicfonia and the float window active at the same time?</summary>
+
+Yes. They use separate iframes and don't conflict. Float window is visible; Sonicfonia is a 1×1px hidden iframe.
+
+</details>
+
+<details>
+<summary>How do I stop Sonicfonia? There's no stop command.</summary>
+
+Use `Sonicfonia: Toggle play/stop` — it stops if playing, or starts if stopped. This replaces the old separate stop and play commands.
+
+</details>
+
+<details>
+<summary>The iframe toggle injected the player in the wrong place.</summary>
+
+The setting "Embed position" (Below H1 / Above H1) controls where it injects when no thumbnail or iframe exists yet. If a `![Thumbnail]()` already exists, the command replaces it in-place regardless of setting.
+
+</details>
+
+<details>
+<summary>How do I use a playlist for Sonicfonia?</summary>
+
+1) Get a YouTube Data API key (see Settings section for steps).
+2) Enter the playlist URL `https://youtube.com/playlist?list=PLxxxxx` in the `YouTube Url` frontmatter of your note, or paste it in Settings → Primary link (fallback). 
+3) Make sure `Sonicfonia: true` is in frontmatter (or "Enable by default" is ON). The plugin fetches all track IDs via the API and queues them.
+
+</details>
+
+<details>
+<summary>What YouTube URL formats are supported?</summary>
+
+All of them: `youtu.be/ID`, `youtube.com/watch?v=ID`, `youtube.com/shorts/ID`, `youtube.com/live/ID`, `youtube.com/embed/ID`, and bare 11-character video IDs.
+
+</details>
