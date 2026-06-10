@@ -174,12 +174,6 @@ No, for most features. The API key is only required for Sonicfonia playlist supp
 **Do Shorts work?**  
 Yes. `/shorts/` URLs are detected automatically. The floating window shows a 9:16 portrait player; the iframe body toggle injects a 9:16 container (max-width 360px).
 
-**The float window isn't dragging.**  
-Drag from the top handle bar (the row with grip dots). The video iframe area doesn't register drags. On mobile, drag is mouse-only and not supported.
-
-**Does the position save between sessions?**  
-Position is saved within a session (survives note switches). It resets to top-centre on full vault reload — intentional to avoid the window going off-screen after resolution changes.
-
 **What does `iframe: true` in frontmatter mean?**  
 It reflects the current state of your note body. `true` means a `<div class="youtube-container">` embed is present; `false` means a static `![Thumbnail]()` is there. The plugin updates this value when you run the toggle command. You don't need to set it manually.
 
@@ -190,14 +184,31 @@ Run `Sonicfonia: Toggle play/stop` — it stops if playing, starts if stopped. T
 
 ## Support
 
-If this plugin saves you time, consider buying me a coffee:
+Building and maintaining these tools takes significant time and energy. Your tips keep the caffeine flowing and helps me stay focused on delivering high-quality, reliable products for the community. 
 
-**[paypal.me/waghmaresujit](https://paypal.me/waghmaresujit)**
+<p align="left">
+  <a href="https://paypal.me/waghmaresujit">
+    <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" height="36" />
+  </a>
+  <a href="https://ko-fi.com/sujitwaghmare">
+    <img src="https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" height="36" />
+  </a>
+  <img src="https://img.shields.io/badge/UPI_(_Scan_Below_)-122E31?style=for-the-badge&logo=upi&logoColor=white" height="36" />
+</p>
+
+<details>
+<summary><b>Donate via UPI (QR Code)</b></summary>
+<br>
+<p align="left">
+<img src="https://img.shields.io/badge/exotic.sus@axl-122E31?style=for-the-badge&logo=upi&logoColor=white" />
+</p>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=exotic.sus@axl&pn=Sujit%20Rajabhau%20Waghmare&cu=INR" alt="UPI QR Code" />
+</details>
 
 ---
 
 <div align="center">
 
-Made by [Waghmare](https://github.com/sujit-waghmare) · Obsidian Plugin
+Made by [Waghmare](https://github.com/sujit-waghmare) • Obsidian Plugin • Star repo 
 
 </div>
