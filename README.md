@@ -206,6 +206,14 @@ Building and maintaining these tools takes significant time and energy. Your tip
 ---
 
 <div align="center">
+  
+[Depth Tutorial for User](https://github.com/sujit-waghmare/yt-supercut/blob/main/Comprehensive%20Guide.md) • [Handoff File for Devs](https://github.com/sujit-waghmare/yt-supercut/blob/main/handoff.md)
+
+</div>
+
+---
+
+<div align="center">
 
 Made by [Waghmare](https://github.com/sujit-waghmare) • Obsidian Plugin • Star repo 
 
